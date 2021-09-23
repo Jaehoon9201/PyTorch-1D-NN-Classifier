@@ -47,7 +47,7 @@ In that case, **PrintLayer()** should be used as below code.
 ```python
  PrintLayer()(x)
 ```  
-Where to applying  
+Where to apply : reference the below code.
 ```python
 class Model(nn.Module):
     def __init__(self):
