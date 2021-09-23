@@ -91,8 +91,7 @@ class PrintLayer(nn.Module):
         return x
 
 
-# Layer output cannot be checked using below Model Generating's Method.
-
+## Method 2 for - Checking Layer outputs
 # class Model(nn.Module):
 #
 #     def __init__(self):
@@ -121,7 +120,7 @@ class PrintLayer(nn.Module):
 # model = Model()
 # model.to(device)
 
-
+## Method 1 for - Checking Layer outputs
 model = nn.Sequential(
         nn.Linear(10, 16),
         nn.ReLU(),
