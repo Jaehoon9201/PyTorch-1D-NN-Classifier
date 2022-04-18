@@ -155,7 +155,7 @@ def train(epoch, train_loss_values):
     #train_loss_values = np.append(train_loss_values, train_loss)
     train_loss_values[epoch-1] = train_loss
 
-    torch.save(model, 'best_model.pt')
+    torch.save(model, 'trained_model.pt')
     return train_loss_values
 
 
