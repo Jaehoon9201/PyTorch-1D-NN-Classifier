@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 from torch.autograd import Variable
 import seaborn as sns
 from sklearn.metrics import classification_report, precision_score, recall_score, f1_score, confusion_matrix
-#from simple_ann_classifier import ann_classification
+
 from simple_ann_classifier.ann_classification import Model
 from simple_ann_classifier.ann_classification import Test_DiabetesDataset
 
