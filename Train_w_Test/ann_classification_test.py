@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 from torch.autograd import Variable
 import seaborn as sns
 from sklearn.metrics import classification_report, precision_score, recall_score, f1_score, confusion_matrix
-
+#from simple_ann_classifier import ann_classification
 from simple_ann_classifier.ann_classification import Model
 from simple_ann_classifier.ann_classification import Test_DiabetesDataset
 
@@ -30,7 +30,7 @@ test_loader = DataLoader(dataset=test_dataset,
 # ■■■■■■■■■■■■  Model load and Eval■■■■■■■■■■■■
 # ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 model = Model()
-model = torch.load('trained_model.pt')
+model = torch.load('trained_model/trained_model.pt')
 model = model.to(device)
 model.eval()
 
@@ -50,5 +50,8 @@ sns.heatmap(confmat, annot=True, fmt='d', cmap='Blues')
 plt.title('supervised classifier')
 plt.xlabel('predicted label')
 plt.ylabel('true label')
+plt.savefig('test_results/confusion_matrix.png')
 plt.show()
 
+with open("test_results/classification_report.txt", "w") as text_file:
+    print(classification_report(labels_all, y_pred_all, digits=4, target_names=['0', '1', '2', '3']), file=text_file)
