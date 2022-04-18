@@ -89,8 +89,25 @@ class Model(nn.Module):
 ## ann_classfication.py
 
 ```python
+torch.save(model, 'trained_model.pt')
+```
 
+## ann_classfication_test.py
 
+```python
+# ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+# ■■■■■■■■■■■■■■■■■■ setting ■■■■■■■■■■■■■■■■■■
+# ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+test_dataset = Test_DiabetesDataset()
+test_loader = DataLoader(dataset=test_dataset, batch_size=len(test_dataset), shuffle=True)
+
+# ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+# ■■■■■■■■■■■■  Model load and Eval■■■■■■■■■■■■
+# ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+model = Model()
+model = torch.load('trained_model.pt')
+model = model.to(device)
+model.eval()
 ```
 
 ```python
@@ -98,7 +115,7 @@ from simple_ann_classifier.ann_classification import Model
 from simple_ann_classifier.ann_classification import Test_DiabetesDataset
 ```
 
-<img src ="https://user-images.githubusercontent.com/71545160/163784664-1c2c5ed4-8917-49e1-9d2a-bad73c9d6543.png" width="50%">
+<img src ="https://user-images.githubusercontent.com/71545160/163784664-1c2c5ed4-8917-49e1-9d2a-bad73c9d6543.png" width="30%">
 
 <img src ="https://user-images.githubusercontent.com/71545160/163784386-2f503312-7c80-4b49-bc43-11950c696e7a.png" width="50%">
 
