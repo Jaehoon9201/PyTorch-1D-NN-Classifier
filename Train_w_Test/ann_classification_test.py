@@ -30,7 +30,7 @@ test_loader = DataLoader(dataset=test_dataset,
 # ■■■■■■■■■■■■  Model load and Eval■■■■■■■■■■■■
 # ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 model = Model()
-model = torch.load('best_model.pt')
+model = torch.load('trained_model.pt')
 model = model.to(device)
 model.eval()
 
