@@ -88,11 +88,22 @@ class Model(nn.Module):
 
 ## ann_classfication.py
 
+save a model, and load the model on the **ann_classfication_test.py** file.
+
 ```python
 torch.save(model, 'trained_model.pt')
 ```
 
+
 ## ann_classfication_test.py
+
+import **class** and **Test_DiabetesDataset** from **ann_classification** file.</br>
+
+```python
+from simple_ann_classifier.ann_classification import Model
+from simple_ann_classifier.ann_classification import Test_DiabetesDataset
+```
+
 
 ```python
 # ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -110,10 +121,7 @@ model = model.to(device)
 model.eval()
 ```
 
-```python
-from simple_ann_classifier.ann_classification import Model
-from simple_ann_classifier.ann_classification import Test_DiabetesDataset
-```
+
 
 <img src ="https://user-images.githubusercontent.com/71545160/163784664-1c2c5ed4-8917-49e1-9d2a-bad73c9d6543.png" width="30%">
 
