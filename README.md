@@ -84,7 +84,7 @@ class Model(nn.Module):
 
 -----------------------
 
-# Train_w_Test
+# simple_ann_classifier_w_test
 
 ## ann_classfication.py
 
