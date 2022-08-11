@@ -1,3 +1,12 @@
+# Before code description...
+
+## Multi-class classification
+
+![image](https://user-images.githubusercontent.com/71545160/184088689-ede4df70-2284-4b6e-9363-c641cfa695d4.png)
+
+
+-----------------------
+
 # PyTorch-1D-NN-Classifier
 
 There are two version of classifiers in a **PyTorch-1D-NN-Classifier**.
