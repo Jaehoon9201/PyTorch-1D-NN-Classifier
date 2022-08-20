@@ -2,6 +2,8 @@
 
 ## Multi-class classification
 
+###  Accuracy below figure defined wrongly !!! It will be modified.
+
 ![image](https://user-images.githubusercontent.com/71545160/184088689-ede4df70-2284-4b6e-9363-c641cfa695d4.png)
 
 
