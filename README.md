@@ -2,10 +2,7 @@
 
 ## Multi-class classification
 
-###  Accuracy below figure defined wrongly !!! It will be modified.
-
-![image](https://user-images.githubusercontent.com/71545160/184088689-ede4df70-2284-4b6e-9363-c641cfa695d4.png)
-
+![image](https://user-images.githubusercontent.com/71545160/185775040-d1d080a7-1694-42a3-94a7-5609f299c947.png)
 
 -----------------------
 
