@@ -138,3 +138,11 @@ model.eval()
 <img src ="https://user-images.githubusercontent.com/71545160/163784541-545da4bd-3df6-437e-874b-15389d132772.png" width="50%">
 
 <img src ="https://user-images.githubusercontent.com/71545160/163784550-0ab54922-d1ad-4eb6-806f-3c28da23d945.png" width="50%">
+
+
+-----------------------
+
+
+# ANN_w_OutputLogging
+
+With this prj, you can obtain output of middle layer in the CSV file.
